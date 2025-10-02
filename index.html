@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="site-content">
+        <!-- Header -->
+        <div class="site-header">
+            <div class="container d-flex justify-content-between">
+                <a href="" class="branding">
+                    <img src="images/logo@2x.png" alt="">
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <small class="site-description">tagline goes here</small>
+                    </div>
+                </a>
+                <div class="main-navigation">
+                    <ul class="menu d-flex">
+                        <li class="menu-item current-menu-item"><a href="">Home</a></li>
+                        <li class="menu-item"><a href="">News</a></li>
+                        <li class="menu-item"><a href="">Live cameras</a></li>
+                        <li class="menu-item"><a href="">Photos</a></li>
+                        <li class="menu-item"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- hero -->
+        <div class="hero">
+            <div class="container">
+                <form action="" class="find-location">
+                    <input type="text" placeholder="Find your location..." id="search">
+                    <input type="button" id="submit" value="Find">
+                </form>
+            </div>
+        </div>
+        <!-- ========== forcast table ========== -->
+        <div class="forcast-table">
+            <div class="container">
+                <div class="forcast-container d-flex">
+                    <div class="today">
+                        <div class="forcast-header">
+                            <div class="today-name">Saturday</div>
+                            <div>
+                                <span class="today-number">6</span>
+                                <span class="today-month">septemper</span>
+                            </div>
+                        </div>
+                        <div class="forcast-content">
+                            <div class="location">Cairo</div>
+                            <div class="degree">
+                                <div class="today-num">27
+                                    <sup>o</sup>C
+                                </div>
+                                <div class="forcast-icon">
+                                    <img id="today-img" alt="">
+                                </div>
+                            </div>
+                            <div id="today-condition" class="custom"></div>
+                            <span id="humidity"></span>
+                            <span id="wind-speed"></span>
+                            <span id="wind-dir"></span>
+                        </div>
+                    </div>
+                    <div class="forcast second-day">
+                        <div class="forcast-header">
+                            <div class="day next-day">Sunday</div>
+                        </div>
+                        <div class="forcast-content">
+                            <div class="forcast-icon">
+                                <img id="next-img" alt="">
+                            </div>
+                            <div class="degree">
+                                <div class="num">36
+                                    <sup>o</sup>C
+                                </div>
+                                <small class="small">23.5
+                                    <sup>o</sup>
+                                </small>
+                            </div>
+                            <div class="customs">Sunny</div>
+                        </div>
+                    </div>
+                    <div class="forcast third-day">
+                        <div class="forcast-header">
+                            <div class="day next-day">Monday</div>
+                        </div>
+                        <div class="forcast-content">
+                            <div class="forcast-icon">
+                                <img id="next-img" alt="">
+                            </div>
+                            <div class="degree">
+                                <div class="num">36
+                                    <sup>o</sup>C
+                                </div>
+                                <small class="small">23.5
+                                    <sup>o</sup>
+                                </small>
+                            </div>
+                            <div class="customs">Sunny</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ========== footer ========== -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="" class="subscribe-form">
+                            <input type="text" name="" id="" placeholder="Enter your email to subscribe...">
+                            <input type="submit" value="subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="social-links">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
